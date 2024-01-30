@@ -84,7 +84,6 @@ resource "azurerm_container_group" "check_nginx" {
   }
 
   # Wait for async container execution
-  # Avoid conflicts with the next "start" container action
   provisioner "local-exec" {
     command = "sleep 60"
   }
