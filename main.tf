@@ -11,11 +11,6 @@ terraform {
       source  = "Azure/azapi"
       version = "~> 1.12.0"
     }
-
-    external = {
-      source  = "hashicorp/external"
-      version = "~> 2.3.2"
-    }
   }
 }
 
